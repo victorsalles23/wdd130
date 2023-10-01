@@ -1,0 +1,48 @@
+
+@import url('https://fonts.googleapis.com/css2? family= Cagliostro & family= Nunito+Sans:opsz,wght@6..12,300 & family= Public+Sans:wght@200 &f');
+
+*{
+    margin: 0;
+}
+
+:root{ 
+    --primary-color:#57cc99;
+    --secondary-color: #38a3a5;
+    --accent1-color: #c7f9cc;
+    --accent2-color: #22577a;
+
+    --heading-font: 'Cagliostro', serif;
+    --paragraph-font: 'Nunito+Sans', serif;
+
+    --nav-background-color: #57cc99;
+    --nav-link-color:#38a3a5;
+    --nav-hover-link-color:#c7f9cc;
+    --nav-hover-background-color: #22577a;
+}
+
+
+
+
+body{
+    font-family: Cagliostro; 
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
+
+header{
+    padding: 20px;
+    background-color: var(--primary-color);     
+}
+
+main {
+    padding: 25px;
+    background-color: var(--secondary-color);
+}
+
+p {
+    padding: 25px;
+}
