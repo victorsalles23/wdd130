@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=PT+Serif:wght@700&display=swap');
+
+:root {
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, main, footer {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero {
+    position: relative;
+    margin-top: 1rem;
+}
+.hero img {
+    width: 150%;
+    height: 150%;
+    object-fit: cover;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    margin: 10px;
+    border: 1px solid #000;
+    padding: 10px;
+    background-color: navy;
+    color: #fff;
+    opacity: .7;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: #fff;
+}
+
+.hero article img {
+    width: 150px;
+    height: auto;
+    float: left;
+}
+
+.sociallinks a {
+    text-decoration:none ;
+}
