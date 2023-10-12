@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=PT+Serif:wght@700&display=swap');
 
-:root {
 
-}
 
 * {
     margin: 0;
@@ -10,10 +8,63 @@
     box-sizing: border-box;
 }
 
-header, main, footer {
-    max-width: 600px;
+header, .grid, main, footer {
+    max-width: 1000px;
     margin: 0 auto;
 }
+
+header{
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 270px 1fr 2fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    max-width: 1500px;
+    background-color: aquamarine;
+
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    text-align: right;
+      
+}
+
+.navigation {
+    display: flex;
+    list-style: none;  
+    
+}
+
+.navigation li {
+    flex: 1 1 100%;
+    
+}
+
+.navigation a {
+    display: block;
+    color: navy;
+    padding: 3px;
+    text-decoration: none;
+    border: 1px solid #000;
+    width: 100px;
+    text-align: center;
+  
+
+}
+
+.navigation a:hover {
+    color: tomato;
+    font-weight: 700;
+    text-decoration: underline;
+
+}
+
+
 
 .hero {
     position: relative;
@@ -39,9 +90,11 @@ header, main, footer {
 
 .hero h1 {
     position: absolute;
-    top: 10px;
-    left: 20px;
-    color: #fff;
+    top: 30px;
+    right: 100px;
+    color: #cbd604;
+    opacity: .9;
+    border: 0.5px sol #151602;
 }
 
 .hero article img {
@@ -50,6 +103,45 @@ header, main, footer {
     float: left;
 }
 
-.sociallinks a {
-    text-decoration:none ;
+ h2  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+
+.box {
+    display: flex;
+   }
+
+.box img { 
+    width: 210px;
+    position: relative;
+}
+
+.adventure h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .river img {
+    display: inline-flex;
+    
+    width: 130px;
+
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+    
+.social{
+    text-decoration:none;
+    width: 5px;
+    display: flex;
+    flex-direction: row;
+    
 }
