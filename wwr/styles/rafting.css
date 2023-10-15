@@ -8,7 +8,13 @@
     box-sizing: border-box;
 }
 
-header, .grid, main, footer {
+
+
+
+html, body {
+    position: relative;
+    height: 100%;
+    min-height: 100%;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -64,6 +70,148 @@ nav {
 
 }
 
+.contact {
+    text-align: center;
+    background-color: aqua;
+}
+
+.instructors  {
+    text-align: right;
+    background-color: aqua;
+    color: #000;
+}
+ 
+
+
+.men {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background-color: aqua;
+}
+ .men img {
+    width: 300px;
+    border:  10px solid aqua;
+    padding: 10px;
+        
+ }
+.men h5 {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    
+}
+
+.map {
+    width: 350px;
+    margin: 0 auto;
+    display: block;
+    float: right;
+
+}
+
+form {
+    float: left;
+    width: 300px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 1fr;
+    margin:  0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr ;
+    
+}
+
+fieldset {
+    display: grid;
+    gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    position: relative;
+
+}
+
+legend {
+    padding: 1rem;
+    color: navy;
+    font-size: 1.8em;
+}
+
+label, input, button, select, textares {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+    text-align: left;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
+input[type="checkbox"] {
+    width:22px ;
+    height: 22px ;
+    vertical-align: bottom ;
+}
+
+button {
+    margin: 8rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+    
+button:hover {
+    background-color: darkcyan;
+
+
+}
+
+.map {
+    overflow: hidden;
+    padding-bottom: 50%;
+    position: relative;
+    height:0;
+    top: 350px;
+
+   
+
+}
+
+.info {
+    position: relative;
+    text-align: center;
+    
+}
+.map iframe{
+    right:10px;
+    top: -10px;
+    height:100%;
+    width:100%;
+    position: absolute;
+    
+}
 
 
 .hero {
@@ -127,14 +275,21 @@ nav {
 }
  .river img {
     display: inline-flex;
-    
     width: 130px;
-
+    
 }
-footer {
+
+
+
+
+footer {    
+    position: absolute;
+	bottom: 0;
+	margin-top: auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
 }
 
     
