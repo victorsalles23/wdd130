@@ -6,9 +6,11 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.7rem;
+    font-size: 1.2rem;
     color: #333;
     background: #fff;
 }
@@ -16,39 +18,34 @@ body {
 header {
     margin: 0;
     width: 700px;
+    color: white;
+    text-align: right;
+    padding: 10px;
 
 }
 
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
 h1 {
     margin: 1rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: navy;
     text-align: center;
 }
 
 form{
-    width: 350px;
+    width: 450px;
     margin: 0 auto;
-    padding: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
     background-color: #eee;
     display: grid;
-}
-
-.form-item {
-    display: grid;
-    align-items: center;
-}
-
-.column1 {
-    grid-template-columns: 2fr;
-    margin:  0.5rem 0;
-}
-
-.column2 {
-    grid-template-columns: 2fr ;
-    
 }
 
 fieldset {
@@ -60,44 +57,74 @@ fieldset {
 
 }
 
-legend {
-    padding: 1rem;
-    color: navy;
-    font-size: 1.8em;
+.question {
+    align-items: center;
+    grid-template-columns: .5fr;
+    margin:  1rem 0;
+    margin-bottom: 20px;
 }
 
-label, input, button, select, textares {
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 label {
+    display: grid;
+    font-weight: bold;
     text-align: left;
     padding-right: 1rem;
 }
 
-input, select, textarea {
-    padding: 0.5rem;
+input, textarea,  select {
+    
+    padding: 10px;
     font-size: 1.1rem;
 }
+ textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    
+ }
 
-input[type="checkbox"] {
-    width:22px ;
+ select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+ }
+
+input[type="text"] {
+    width: 100%;
+    padding:  10px 20px;
+    border: 1px solid #ccc;
     height: 22px ;
     vertical-align: bottom ;
 }
 
 button {
-    margin: 5rem;
+    margin: 1rem;
     background-color: navy;
-    color: #fff;
+    color: #ccc;
     border: none;
     border-radius: 0.5rem;
-    padding: 0.5rem;
-    font-size: 1.2rem;
+    padding: 10px 20px;
+    
 }
     
 button:hover {
     background-color: darkcyan;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.questiom img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex: 0 1 auto;
+    flex-shrink: 0;
 }
 
 footer {
@@ -107,6 +134,4 @@ footer {
     font-size: 0.8em;
     color: #777;
     border-top: 1px solid #ccc;
-}
-
 }

@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic HTML and CSS Quiz></title>
-    <link rel="stylesheet" href="styles/quiz.css">
+    <title>Basic HTML and CSS Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css" type="text/css">
 </head>
 <body>
     <header>
@@ -12,6 +13,40 @@
     </header>
     <main>
         <form>
+            <fieldset>               
+                <div class="question">
+                    <label for="q1">1. What does the acronym HTML mean?</label>
+                    <input type="text" id="q1" name="q1">
+                </div>
+                <div class="question">
+                    <label for="q2">2. Why do we use doctype in HTML?</label>
+                    <textarea id="q2" name="q2" rows="4" placeholder=""></textarea>
+                </div>
+
+                <div class="question">
+                
+                    <label for="q3">3. The tag used to place an image in HTML is <________></label>
+                    <select id="q3" name="q3">
+                        <option value="" selected disabled>Choose One </option>
+                        <option value="image"> img </option>
+                        <option value="photografh"> photo </option>
+                        <option value="portrait"> port </option>
+                    
+                    </select>
+
+                </div>
+                <div class="question">
+                    <label for="q4">4. What does this command do in an HTML element?</label>
+                    <img src="images/command.jpg" alt="command" width="300">
+                    <input type="text" id="q4" name="q4">
+
+                    
+                </div>
+
+            </fieldset>
+
+            <button type="submit">Submit Quiz</button>
+
             
         </form>
 
@@ -19,3 +54,5 @@
     
 </body>
 </html>
+
+
